@@ -1,0 +1,123 @@
+=clearfix
+  &:before,
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+=placeholder
+  $placeholders: ':-moz' ':-webkit-input' '-moz' '-ms-input'
+  @each $placeholder in $placeholders
+    &:#{$placeholder}-placeholder
+      @content
+=phablet 
+  @media screen and (min-width: $phablet)
+    @content
+=desktop
+  @media screen and (min-width: $desktop)
+    @content
+
+=button
+  position: relative
+  // display: inline-block
+  vertical-align: top
+  text-align: center
+  text-decoration: none
+  cursor: pointer
+  border: 0
+  padding: 0
+  background-color: transparent
+  white-space: nowrap
+  text-rendering: auto
+  user-select: none
+  box-sizing: border-box
+  letter-spacing: 0
+  font-style: normal
+  box-shadow: none
+  font-family: $family-base
+  height: 56px
+  font-size: 20px
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  &:hover,
+  &:focus
+    outline: none
+
+
+=btnDefault
+    border-style: solid
+    border-width: 1px
+    color: $btn-default-color
+    fill: $btn-default-color
+    background-color: $btn-default
+    border-color: darken($btn-default, 5%) darken($btn-default, 10%) darken($btn-default, 15%)
+    background: linear-gradient(to bottom, lighten($btn-default, 25%), $btn-default)
+    box-shadow: 0 1px 0 rgba($white, 0.4) inset
+    &:hover
+        color: $btn-default-color
+        fill: $btn-default-color
+        background-color: darken($btn-default, 5%)
+        background: linear-gradient(to bottom, $btn-default, $btn-default)
+
+=btnYellow
+    border-style: solid
+    border-width: 1px
+    color: $btn-yellow-color
+    fill: $btn-yellow-color
+    background-color: $btn-yellow
+    border-color: darken($btn-yellow, 5%) darken($btn-yellow, 10%) darken($btn-yellow, 15%)
+    background: linear-gradient(to bottom, lighten($btn-yellow, 18%), darken($btn-yellow, 5%))
+    box-shadow: 0 1px 0 rgba($white, 0.4) inset
+    &:hover
+        color: $btn-yellow-color
+        fill: $btn-yellow-color
+        background-color: darken($btn-yellow, 5%)
+        background: linear-gradient(to bottom, $btn-yellow, $btn-yellow)
+
+=btnPurple
+    border-style: solid
+    border-width: 1px
+    color: $btn-purple-color
+    fill: $btn-purple-color
+    background-color: $btn-purple
+    border-color: darken($btn-purple, 5%) darken($btn-purple, 10%) darken($btn-purple, 15%)
+    background: linear-gradient(to bottom, lighten($btn-purple, 18%), darken($btn-purple, 5%))
+    box-shadow: 0 1px 0 rgba($white, 0.4) inset
+    &:hover
+        color: $btn-purple-color
+        fill: $btn-purple-color
+        background-color: darken($btn-purple, 5%)
+        background: linear-gradient(to bottom, $btn-purple, $btn-purple)
+
+=btnGreen
+    border-style: solid
+    border-width: 1px
+    color: $btn-green-color
+    fill: $btn-green-color
+    background-color: $btn-green
+    border-color: darken($btn-green, 5%) darken($btn-green, 10%) darken($btn-green, 15%)
+    background: linear-gradient(to bottom, lighten($btn-green, 7%), darken($btn-green, 10%))
+    box-shadow: 0 1px 0 rgba($white, 0.4) inset
+    &:hover
+        color: $btn-green-color
+        fill: $btn-green-color
+        background-color: darken($btn-green, 5%)
+        background: linear-gradient(to bottom, $btn-green, $btn-green)
+
+=btnRed
+    border-style: solid
+    border-width: 1px
+    color: $btn-red-color
+    fill: $btn-red-color
+    background-color: $btn-red
+    border-color: darken($btn-red, 5%) darken($btn-red, 10%) darken($btn-red, 15%)
+    background: linear-gradient(to bottom, lighten($btn-red, 7%), darken($btn-red, 10%))
+    box-shadow: 0 1px 0 rgba($white, 0.4) inset
+    &:hover
+        color: $btn-red-color
+        fill: $btn-red-color
+        background-color: darken($btn-red, 5%)
+        background: linear-gradient(to bottom, $btn-red, $btn-red)
+

@@ -1,0 +1,155 @@
+.buttonAddNewCustomer
+  +button
+  +btnPurple
+  padding-right: 30px
+  padding-left: 20px
+  border-radius: 500em 
+  position: fixed
+  bottom: 0
+  right: 0
+  margin-left: 20px
+  margin-right: 20px
+  margin-bottom: 50px
+  +desktop
+    position: absolute
+
+.listEmpty
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  text-align: center
+  &__copy
+    font-size: 16px
+    line-height: 1.55
+    max-width: 174px
+    color: $light
+  &__icon
+    fill: lighten($light, 15%)
+    margin-top: 20px
+    animation: bounceDown 2s infinite
+
+.total
+  position: relative
+  background-color: #ddd
+  padding: 10px
+  &__wrapper
+    border: 1px solid #777
+    background-color: $white
+    border-radius: 6px
+    display: flex
+    flex-flow: row wrap
+    text-align: center
+    position: relative
+  &__taka
+    position: relative
+    width: 50%
+    padding-top: 12px
+    padding-bottom: 12px
+    span
+      line-height: 1.33
+      &:nth-child(1)
+        font-size: 18px
+        display: block
+        font-weight: 700
+      &:nth-child(2)
+        color: $light
+        font-size: 16px
+    &.joma
+      span:nth-child(1)
+        color: darken($green, 10%)
+    &.baki
+      span:nth-child(1)
+        color: $red
+      &::before
+        content: ""
+        position: absolute
+        background-color: #ddd
+        top: 0
+        left: 0
+        width: 1px
+        height: 40px
+        top: 15px
+
+  .detailsButton
+    +button
+    border-top: 1px solid #ddd
+    font-size: 1.4em
+    color: $gray
+    height: 44px
+    width: 100%
+
+.stickbar
+  height: 44px
+  display: flex
+  align-items: center
+  border-bottom: 1px solid #ddd
+  font-size: 14px
+  color: $light
+  &__label
+    flex: 1
+    padding-left: 10px
+  &__searchButton
+    +button
+    height: 44px
+    width: 44px
+    svg
+      fill: $light
+  
+.list
+  position: relative
+  &__item
+    position: relative
+    // border-bottom: 1px solid #ddd
+    padding-top: 15px
+    padding-bottom: 13px
+    display: block
+    text-decoration: none
+    color: $black
+    padding-left: 10px
+    padding-right: 10px
+    &::before
+      content: ""
+      position: absolute
+      height: 1px
+      background-color: #ddd
+      left: 0
+      bottom: 0
+      right: 0
+      margin-bottom: -1px
+      margin-left: 10px
+      margin-right: 10px
+  &__name
+    font-size: 1.6em
+    line-height: 1.33
+    padding-right: 105px + 30
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+  &__date
+    font-size: 1.4em
+    line-height: 1.11
+    color: $light
+  &__taka
+    font-size: 1.6em
+    line-height: 1.33
+    position: absolute
+    right: 0
+    top: 0
+    margin-top: 15px
+    margin-right: 10px
+    max-width: 105px
+    font-weight: 700
+    &.baki
+      color: $red
+    &.joma
+      color: darken($green, 10%)
+  &__status
+    font-size: 1.4em
+    line-height: 1.11
+    position: absolute
+    right: 0
+    top: 0
+    margin-top: 22px + 15
+    margin-right: 10px
+    color: $light

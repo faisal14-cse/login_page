@@ -1,0 +1,47 @@
+{
+  "name": "dgkhata",
+  "version": "1.0.0",
+  "description": "বাকী-জমার হিসাব নিকাশ ম্যানেজ করতে ব্যবহার করুন",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@git.deligram.com:zafree/dgkhata.git"
+  },
+  "keywords": [
+    "dg",
+    "khata"
+  ],
+  "author": "Deligram",
+  "license": "Private",
+  "bugs": {
+    "url": "https://"
+  },
+  "homepage": "https://",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "browser-sync": "^2.26.7",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csso": "^3.0.1",
+    "gulp-header": "^2.0.7",
+    "gulp-mode": "^1.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1"
+  }
+}
